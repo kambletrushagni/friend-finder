@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startactivitybluetooth"
+        android:text="Bluetooth chat" />
+
+
+    <TextView
+        android:id="@+id/searchedname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80sp"
+        android:padding="10sp"
+        android:text="SEARCH BY TAG"
+        android:textSize="20sp" />
+    <!--
+        <EditText
+            android:id="@+id/nameoftag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+    <Spinner
+        android:id="@+id/nameoftag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/tag_array"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/searchbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="5dp"
+        android:onClick="addtagtoString"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="SEARCH"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/smsbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="5dp"
+            android:onClick="sendSMS"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="SMS"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/mbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="5dp"
+            android:onClick="Mapfriend"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="MAP"
+            android:textColor="#000"
+            android:textSize="20sp"
+             android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/callbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="5dp"
+            android:onClick="Callfriend"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="CALL"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="-390dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
